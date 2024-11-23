@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Travel Guide</title>
+    <link rel="icon" type="image/png" href="./image/travel.png">
+    <link rel="stylesheet" href="travel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <img src="./image/logo.png" alt="image">
+        <h1>Travel Guide</h1>
+        <div id="na">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="b"></div>
+    <div id="home">
+    <div class="intro" id="intro">
+        <h2>Your Adventure Awaits</h2>
+<p>
+    Discover breathtaking destinations, immerse yourself in vibrant cultures, and create unforgettable memories.
+    Our travel guide is here to help you plan your next adventure, whether you’re seeking relaxation on a sunny beach, 
+    an exhilarating hike in the mountains, or a cultural journey through historic cities.
+</p>
+<button id="btn">BOOK NOW >></button>
+    </div>
+   
+
+    <div id="book">
+          <form id="bk">
+            <div id="top">
+
+                <h2>Book Now</h2><br>
+            <span class="close" id="close">&times;</span>
+            </div>
+            
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" required><br>
+            <label for="mob">Mobile:</label><br>
+            <input type="number" id="mob" minlength="10" required><br>
+            <label for="des" >Desitantion:</label><br>
+            <select id="des">
+                <option value="">Select</option>
+                <option value="Asia">Asia</option>
+                <option value="Africa">Africa</option>
+                <option value="Australia ">Australia</option>
+                <option value="Europe">Europe</option>
+                <option value="N.America">N.America</option>
+                <option value="S.America">S.America</option>
+            </select><br>
+            <label for="cou">No Of People Traveling</label><br>
+            <input type="number" id="cou" required><br>
+            <label>Date</label><br>
+            <div id="date">
+                 <input type="date" id="str"><br>
+            <input type="date" id="end"><br>
+            </div>
+           
+            <button type="submit" id="bttn">BOOK</button>
+
+        </form>
+    </div>
+    
+    <div id="side">
+        <div id="search">
+            <input type="search" placeholder="Enter Your Desitantion" id="serc">
+            <button type="submit" id="sbtn"><i class="fas fa-search"></i></button>
+            <button type="reset" id="clear">Clear</button>
+        </div>
+        <div id="result">
+
+        </div>
+
+    </div>
+   
+
+    </div>
+    <footer>
+
+        <div class="social-icons" id="soc">
+            <a href="https://www.facebook.com" target="blank" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="blank" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </footer>
+  <script src="travel.js"></script>  
+</body>
+</html>
